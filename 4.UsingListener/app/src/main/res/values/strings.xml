@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">4.Using Listener</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="a">A</string>
+    <string name="aung_aung">Aung Aung</string>
+    <string name="_0986678654">0986678654</string>
+    <string name="aung_gmail_com">aung@gmail.com</string>
+    <string name="name">Name</string>
+    <string name="group">Group</string>
+    <string name="phone">Phone</string>
+    <string name="email">Email</string>
+    <string name="address">Address</string>
+    <string name="edit_contact">Edit Contact</string>
+    <string name="save">Save</string>
+</resources>
