@@ -13,6 +13,8 @@
         <action
             android:id="@+id/action_home_to_category"
             app:destination="@id/category"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
             app:launchSingleTop="true"
             app:popUpTo="@+id/category" />
     </fragment>
@@ -29,19 +31,25 @@
     <action
         android:id="@+id/action_global_category"
         app:destination="@id/category"
+        app:enterAnim="@anim/nav_default_enter_anim"
+        app:exitAnim="@anim/nav_default_exit_anim"
+        app:launchSingleTop="true"
         app:popUpTo="@id/category"
-        app:popUpToInclusive="true"
-        app:launchSingleTop="true" />
+        app:popUpToInclusive="true" />
     <action
         android:id="@+id/action_global_home"
         app:destination="@id/home"
+        app:enterAnim="@anim/nav_default_enter_anim"
+        app:exitAnim="@anim/nav_default_exit_anim"
+        app:launchSingleTop="true"
         app:popUpTo="@id/home"
-        app:popUpToInclusive="true"
-        app:launchSingleTop="true" />
+        app:popUpToInclusive="true" />
     <action
         android:id="@+id/action_global_setting"
         app:destination="@id/setting"
+        app:enterAnim="@anim/nav_default_enter_anim"
+        app:exitAnim="@anim/nav_default_exit_anim"
+        app:launchSingleTop="true"
         app:popUpTo="@id/setting"
-        app:popUpToInclusive="true"
-        app:launchSingleTop="true" />
+        app:popUpToInclusive="true" />
 </navigation>
