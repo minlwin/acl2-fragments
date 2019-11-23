@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.jdc.a08tobarnavigation.MainActivity">
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/ic_home"
+        android:title="@string/home"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/category"
+        android:icon="@drawable/ic_category"
+        android:title="@string/category"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/setting"
+        android:icon="@drawable/ic_setting"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="ifRoom" />
+</menu>

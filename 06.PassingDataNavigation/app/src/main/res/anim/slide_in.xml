@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set android:duration="@integer/config_navAnimTime" xmlns:android="http://schemas.android.com/apk/res/android">
+    <translate android:fromXDelta="100%" android:toXDelta="0" />
+    <alpha android:fromAlpha="0.1" android:toAlpha="1" />
+    <rotate android:fromDegrees="270" android:toDegrees="0" />
+</set>
