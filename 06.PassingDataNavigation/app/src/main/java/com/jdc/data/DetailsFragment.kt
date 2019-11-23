@@ -11,6 +11,8 @@ import kotlinx.android.synthetic.main.fragment_details.*
 
 class DetailsFragment : Fragment() {
 
+    private val args by navArgs<DetailsFragmentArgs>()
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -19,10 +21,7 @@ class DetailsFragment : Fragment() {
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-
-        arguments?.also {
-            arg -> output.text = DetailsFragmentArgs.fromBundle(arg).name
-        }
+        output.text = args.name
     }
 
 }

@@ -26,9 +26,8 @@ class EditFragment : Fragment() {
             val name = input.text.toString()
 
             if(name.isNotEmpty()) {
-                EditFragmentDirections.actionEditToDetails(name).apply {
-                    it.findNavController().navigate(this)
-                }
+                val action = EditFragmentDirections.actionEditToDetails(name)
+                it.findNavController().navigate(action)
             }
         }
     }
