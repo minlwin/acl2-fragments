@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">11.Using Room</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="thidar_aung">Thidar Aung</string>
+    <string name="_09875677654">09875677654</string>
+</resources>
