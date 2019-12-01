@@ -24,6 +24,7 @@ class PatientAdapter(private val list: List<Patient>): RecyclerView.Adapter<Pati
         holder.itemView.also {
             it.name.text = list[position].name
             it.phone.text = list[position].phone
+            it.gender.text = list[position].gender?.name?.substring(0, 1)?.toUpperCase() ?: "M"
         }
     }
 }

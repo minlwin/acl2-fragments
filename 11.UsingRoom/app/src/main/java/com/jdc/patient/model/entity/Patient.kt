@@ -12,11 +12,11 @@ import androidx.room.PrimaryKey
 )
 data class Patient(
     @PrimaryKey(autoGenerate = true)
-    var id:Int?,
-    var name:String?,
-    var phone:String?,
-    var address:String?,
-    var gender: Gender?
+    var id:Int? = null,
+    var name:String? = null,
+    var phone:String? = null,
+    var address:String? = null,
+    var gender: Gender? = null
 )
 
 enum class Gender {

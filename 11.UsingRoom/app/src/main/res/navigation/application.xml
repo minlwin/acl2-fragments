@@ -13,13 +13,17 @@
         <action
             android:id="@+id/action_patient_list_to_patient_edit"
             app:destination="@id/patient_edit"
-            app:launchSingleTop="true"
-            app:popUpTo="@+id/patient_edit"
-            app:popUpToInclusive="true" />
+            app:launchSingleTop="true" />
     </fragment>
     <fragment
         android:id="@+id/patient_edit"
         android:name="com.jdc.patient.ui.PatientEdit"
         android:label="Add Patient"
-        tools:layout="@layout/fragment_patient_edit" />
+        tools:layout="@layout/fragment_patient_edit" >
+        <action
+            android:id="@+id/action_save"
+            app:destination="@id/patient_list"
+            app:launchSingleTop="true"
+            app:popUpTo="@+id/patient_list" />
+    </fragment>
 </navigation>
