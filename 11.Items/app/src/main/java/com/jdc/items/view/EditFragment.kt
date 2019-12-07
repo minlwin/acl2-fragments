@@ -47,6 +47,10 @@ class EditFragment : Fragment() {
             price.setText(item.price.toString())
             description.setText(item.description)
 
+            (context as MainActivity)?.also {
+                it.setTitle("Edit Item")
+            }
+
             id = item.id
         }
 

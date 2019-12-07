@@ -1,6 +1,7 @@
 package com.jdc.items.model.converter
 
 enum class Category {
+
     Foods, Drinks, Fashion, Accessories;
 
     val header:String
