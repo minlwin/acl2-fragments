@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Using Room API</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="add_new_item">Add New Item</string>
+    <string name="item">Item</string>
+    <string name="enter_name">Enter Name</string>
+    <string name="category">Category</string>
+    <string name="price">Price</string>
+    <string name="enter_price">Enter Price</string>
+    <string name="description">Description</string>
+    <string name="enter_description">Enter Description</string>
+    <string name="save">Save</string>
+    <string name="a">A</string>
+    <string name="coke">Coke</string>
+    <string name="textview">TextView</string>
+    <string name="_350_mmk">350 MMK</string>
+</resources>
