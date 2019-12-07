@@ -13,7 +13,9 @@ import kotlinx.android.synthetic.main.item_item.view.*
 class ItemAdapter :
     ListAdapter<Item, ItemAdapter.ItemVH>(ItemChangeCallback) {
 
-    class ItemVH(itemView: View) : RecyclerView.ViewHolder(itemView)
+    class ItemVH(itemView: View) : RecyclerView.ViewHolder(itemView) {
+        var item:Item? = null
+    }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int) = ItemVH(
         LayoutInflater.from(parent.context).inflate(R.layout.item_item, parent, false)
@@ -28,5 +30,7 @@ class ItemAdapter :
             it.name.text = item.name
             it.price.text = "${item.price} MMK"
         }
+
+        holder.item = item
     }
 }

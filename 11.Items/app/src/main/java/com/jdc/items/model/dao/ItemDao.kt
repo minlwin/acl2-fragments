@@ -1,8 +1,6 @@
 package com.jdc.items.model.dao
 
-import androidx.room.Dao
-import androidx.room.Insert
-import androidx.room.Query
+import androidx.room.*
 import com.jdc.items.model.entity.Item
 
 @Dao
@@ -13,4 +11,10 @@ interface ItemDao {
 
     @Insert
     fun create(item: Item)
+
+    @Delete
+    fun delete(item: Item)
+
+    @Update
+    fun update(item: Item)
 }
