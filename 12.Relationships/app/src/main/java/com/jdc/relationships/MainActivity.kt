@@ -7,12 +7,19 @@ import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
+import androidx.room.Room
+import androidx.room.RoomDatabase
+import com.jdc.relationships.model.ClinicDatabase
 
 class MainActivity : AppCompatActivity() {
+
+    lateinit var database: ClinicDatabase
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        database = Room.databaseBuilder(this, ClinicDatabase::class.java, "com.jdc.relation.clinic").build()
 
 
         val navView: BottomNavigationView = findViewById(R.id.nav_view)
@@ -22,7 +29,7 @@ class MainActivity : AppCompatActivity() {
         // menu should be considered as top level destinations.
         val appBarConfiguration = AppBarConfiguration(
             setOf(
-                R.id.navigation_home, R.id.navigation_dashboard, R.id.navigation_notifications
+                R.id.doctors, R.id.patients, R.id.registrations
             )
         )
         setupActionBarWithNavController(navController, appBarConfiguration)

@@ -2,4 +2,57 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/mobile_navigation"/>
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/doctors">
+    <fragment
+        android:id="@+id/doctors"
+        android:name="com.jdc.relationships.ui.DoctorFragment"
+        android:label="Doctors"
+        tools:layout="@layout/fragment_doctor" />
+    <fragment
+        android:id="@+id/patients"
+        android:name="com.jdc.relationships.ui.PatientFragment"
+        android:label="Patients"
+        tools:layout="@layout/fragment_patient" />
+    <fragment
+        android:id="@+id/registrations"
+        android:name="com.jdc.relationships.ui.RegistrationFragment"
+        android:label="Registrations"
+        tools:layout="@layout/fragment_registration" />
+    <fragment
+        android:id="@+id/edit_doctor"
+        android:name="com.jdc.relationships.ui.DoctorEditFragment"
+        android:label="Edit Doctor"
+        tools:layout="@layout/fragment_doctor_edit" >
+        <action
+            android:id="@+id/action_edit_doctor_to_doctors"
+            app:destination="@id/doctors" />
+    </fragment>
+    <fragment
+        android:id="@+id/edit_patient"
+        android:name="com.jdc.relationships.ui.PatientEditFragment"
+        android:label="Edit Patient"
+        tools:layout="@layout/fragment_patient_edit" >
+        <action
+            android:id="@+id/action_edit_patient_to_patients"
+            app:destination="@id/patients" />
+    </fragment>
+    <fragment
+        android:id="@+id/edit_registration"
+        android:name="com.jdc.relationships.ui.RegistrationEditFragment"
+        android:label="Edit Registration"
+        tools:layout="@layout/fragment_registration_edit" >
+        <action
+            android:id="@+id/action_edit_registration_to_registrations"
+            app:destination="@id/registrations" />
+    </fragment>
+    <fragment
+        android:id="@+id/search"
+        android:name="com.jdc.relationships.ui.RegistrationSearchFragment"
+        android:label="Search"
+        tools:layout="@layout/fragment_registration_search" >
+        <action
+            android:id="@+id/action_search_to_registrations"
+            app:destination="@id/registrations" />
+    </fragment>
+</navigation>

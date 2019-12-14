@@ -2,4 +2,16 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
 
+    <item
+        android:id="@+id/doctors"
+        android:icon="@drawable/ic_doctor_24"
+        android:title="@string/doctors" />
+    <item
+        android:id="@+id/patients"
+        android:icon="@drawable/ic_patient_24"
+        android:title="@string/patients" />
+    <item
+        android:id="@+id/registrations"
+        android:icon="@drawable/ic_registration_24"
+        android:title="@string/registry" />
 </menu>
